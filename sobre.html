@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - AutoMasters</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Interno para a página Sobre */
+        .historia {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .equipe-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .membro {
+            text-align: center;
+            max-width: 250px;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .membro img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #e63946;
+        }
+        
+        .membro h3 {
+            color: #e63946;
+            margin: 10px 0 5px;
+        }
+        
+        .membro p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="logo" style="color: #e63946; font-size: 2.5rem;">AutoMasters</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Sobre a AutoMasters</h1>
+            
+            <div class="historia">
+                <h2>Nossa História</h2>
+                <p>Fundada em 2005, a AutoMasters nasceu da paixão por automóveis e do desejo de oferecer serviços de excelência no mercado automotivo. Começamos como uma pequena oficina especializada e, ao longo dos anos, nos tornamos referência em serviços automotivos na região.</p>
+                <p>Nossa missão é proporcionar aos clientes a melhor experiência em manutenção, performance e estética automotiva, sempre com transparência, qualidade e compromisso.</p>
+            </div>
+            
+            <div class="valores">
+                <h2>Nossos Valores</h2>
+                <div class="grid-valores">
+                    <div class="card">
+                        <h3>Qualidade</h3>
+                        <p>Utilizamos apenas peças e produtos de primeira linha em todos os nossos serviços.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Transparência</h3>
+                        <p>Fornecemos orçamentos detalhados e explicamos todos os procedimentos necessários.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Compromisso</h3>
+                        <p>Garantimos prazos de entrega e oferecemos garantia em todos os nossos serviços.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="equipe">
+                <h2>Nossa Equipe</h2>
+                <div class="equipe-container">
+                    <div class="membro">
+                        <img src="imagens/147142.png" alt="Pedro Neto">
+                        <h3>Pedro Neto</h3>
+                        <p>Especialista em Mecânica</p>
+                        <p style="font-size: 0.8rem; color: #888;">15 anos de experiência</p>
+                    </div>
+                    <div class="membro">
+                        <img src="imagens/147144.png" alt="João Gabriel">
+                        <h3>João Gabriel</h3>
+                        <p>Especialista em Elétrica</p>
+                        <p style="font-size: 0.8rem; color: #888;">12 anos de experiência</p>
+                    </div>
+                    <div class="membro">
+                        <img src="imagens/6858485.png" alt="Miguel Silveira">
+                        <h3>Miguel Silveira</h3>
+                        <p>Especialista em Performance</p>
+                        <p style="font-size: 0.8rem; color: #888;">10 anos de experiência</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AutoMasters. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - AutoMasters</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Interno para a página Galeria */
+        .filtros {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .filtro-btn {
+            padding: 8px 16px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .filtro-btn:hover, .filtro-btn.active {
+            background-color: #e63946;
+            color: white;
+        }
+        
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .galeria-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            height: 250px;
+        }
+        
+        .galeria-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .galeria-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .galeria-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .galeria-item:hover .overlay {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="logo" style="color: #e63946; font-size: 2.5rem;">AutoMasters</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Nossa Galeria</h1>
+            <p>Confira alguns dos nossos trabalhos realizados e projetos especiais.</p>
+            
+            <div class="filtros">
+                <button class="filtro-btn active" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="manutencao">Manutenção</button>
+                <button class="filtro-btn" data-filtro="performance">Performance</button>
+                <button class="filtro-btn" data-filtro="estetica">Estética</button>
+                <button class="filtro-btn" data-filtro="personalizados">Projetos Personalizados</button>
+            </div>
+            
+            <div class="galeria">
+                <div class="galeria-item" data-categoria="manutencao">
+                    <img src="imagens/golf.png" alt="Serviço de manutenção">
+                    <div class="overlay">
+                        <h3>Revisão Completa</h3>
+                        <p>Volkswagen Golf 2020</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-categoria="performance">
+                    <img src="imagens/focus.png" alt="Upgrade de performance">
+                    <div class="overlay">
+                        <h3>Instalação de Turbo</h3>
+                        <p>Ford Focus ST</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-categoria="estetica">
+                    <img src="imagens/911.png" alt="Serviço de estética">
+                    <div class="overlay">
+                        <h3>Polimento e Cristalização</h3>
+                        <p>Porsche 911</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-categoria="personalizados">
+                    <img src="imagens/OPALA-PNG.png" alt="Projeto personalizado">
+                    <div class="overlay">
+                        <h3>Projeto Especial</h3>
+                        <p>Restauração Chevrolet Opala</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-categoria="manutencao">
+                    <img src="imagens/bmw.png" alt="Serviço de freios">
+                    <div class="overlay">
+                        <h3>Troca de Sistema de Freios</h3>
+                        <p>BMW Série 3</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-categoria="performance">
+                    <img src="imagens/civic.png" alt="Escape esportivo">
+                    <div class="overlay">
+                        <h3>Escapamento Esportivo</h3>
+                        <p>Honda Civic SI</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-categoria="estetica">
+                    <img src="imagens/comprar-amg-45-s-4matic_1cb3a7b321.png" alt="Vidraçamento">
+                    <div class="overlay">
+                        <h3>Vidraçamento Profissional</h3>
+                        <p>Mercedes-Benz Classe C</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-categoria="personalizados">
+                    <img src="imagens/Fusca-azul-Png.png" alt="Carro personalizado">
+                    <div class="overlay">
+                        <h3>Personalização Completa</h3>
+                        <p>Volkswagen Fusca</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AutoMasters. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

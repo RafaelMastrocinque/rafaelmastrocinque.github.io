@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - AutoMasters</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Interno para a página Serviços */
+        .servico-destaque {
+            background-color: #e63946;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .categoria-servico {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .servicos-lista {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .servico-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="logo" style="color: #e63946; font-size: 2.5rem;">AutoMasters</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Nossos Serviços</h1>
+            
+            <div class="servico-destaque">
+                <h2>Serviço em Destaque: Revisão Completa</h2>
+                <p>Realizamos uma verificação completa do seu veículo com mais de 50 itens verificados. Garanta a segurança e o bom funcionamento do seu carro.</p>
+            </div>
+            
+            <div class="categoria-servico">
+                <h2>Manutenção Preventiva</h2>
+                <div class="servicos-lista">
+                    <div class="servico-item">
+                        <h3>Troca de Óleo e Filtros</h3>
+                        <p>Utilizamos óleos lubrificantes de alta qualidade e filtros originais.</p>
+                        <p style="font-weight: bold; color: #e63946;">A partir de R$ 150,00</p>
+                    </div>
+                    <div class="servico-item">
+                        <h3>Alinhamento e Balanceamento</h3>
+                        <p>Alinhamento 3D computadorizado e balanceamento de precisão.</p>
+                        <p style="font-weight: bold; color: #e63946;">A partir de R$ 120,00</p>
+                    </div>
+                    <div class="servico-item">
+                        <h3>Revisão de Freios</h3>
+                        <p>Verificação completa do sistema de freios e troca de pastilhas se necessário.</p>
+                        <p style="font-weight: bold; color: #e63946;">A partir de R$ 200,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="categoria-servico">
+                <h2>Performance</h2>
+                <div class="servicos-lista">
+                    <div class="servico-item">
+                        <h3>Reprogramação de ECU</h3>
+                        <p>Aumente a potência e torque do seu veículo com reprogramação segura.</p>
+                        <p style="font-weight: bold; color: #e63946;">A partir de R$ 1.200,00</p>
+                    </div>
+                    <div class="servico-item">
+                        <h3>Instalação de Turbocompressor</h3>
+                        <p>Instalação profissional de kits turbo para aumento significativo de potência.</p>
+                        <p style="font-weight: bold; color: #e63946;">Sob consulta</p>
+                    </div>
+                    <div class="servico-item">
+                        <h3>Escapamento Esportivo</h3>
+                        <p>Melhore o desempenho e o som do seu veículo com escapamentos esportivos.</p>
+                        <p style="font-weight: bold; color: #e63946;">A partir de R$ 800,00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="categoria-servico">
+                <h2>Estética Automotiva</h2>
+                <div class="servicos-lista">
+                    <div class="servico-item">
+                        <h3>Polimento e Cristalização</h3>
+                        <p>Recupere o brilho original da pintura e proteja contra agentes externos.</p>
+                        <p style="font-weight: bold; color: #e63946;">A partir de R$ 400,00</p>
+                    </div>
+                    <div class="servico-item">
+                        <h3>Vidraçamento</h3>
+                        <p>Aplicação de películas de proteção solar e segurança.</p>
+                        <p style="font-weight: bold; color: #e63946;">A partir de R$ 300,00</p>
+                    </div>
+                    <div class="servico-item">
+                        <h3>Personalização</h3>
+                        <p>Vinil adesivagem, pintura personalizada e acessórios.</p>
+                        <p style="font-weight: bold; color: #e63946;">Sob consulta</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AutoMasters. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
